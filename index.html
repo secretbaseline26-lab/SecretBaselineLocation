@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading App...</title>
+    <!-- Instant meta-refresh redirect -->
+    <meta http-equiv="refresh" content="0;url=https://www.google.com/maps/d/viewer?mid=13EWFnMIKoKWvXMAETg_mCWFd2jKNG0c&usp=sharing">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            color: #333;
+        }
+        .loader {
+            margin: 20px auto;
+            border: 4px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 4px solid #3498db;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <h2>Redirecting to your app...</h2>
+    <div class="loader"></div>
+    <p>If you are not redirected automatically, <a href="https://www.google.com/maps/d/viewer?mid=13EWFnMIKoKWvXMAETg_mCWFd2jKNG0c&usp=sharing">click here</a>.</p>
+
+    <script>
+        // Fallback JavaScript redirect
+        window.location.href = "https://www.google.com/maps/d/viewer?mid=13EWFnMIKoKWvXMAETg_mCWFd2jKNG0c&usp=sharing";
+    </script>
+</body>
+</html>
